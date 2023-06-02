@@ -6,18 +6,18 @@
 </script>
 
 <svelte:head>
-	<title>SvelteKit Launchpad Template</title>
-	<meta name="description" content="A template for creating landing pages in svelte with prisma database ORM, tailwind and superforms." />
+	<title>LNBCK is coming soon</title>
+	<meta name="description" content="Sign up for a new kind of news program." />
 </svelte:head>
 
-<h1 class="text-2xl">Title Here</h1>
+<h1 class="text-2xl">LeaNaBaCK</h1>
 
 <div class="my-4">
-	<p>This is the signup page to my great new project.</p>
+	<p class="mb-4">Sign up for a new kind of news program.</p>
 </div>
 
 
-<div class="my-4 bg-green-200 p-2 rounded-lg">
+<div class="my-4 bg-violet-200 p-2 rounded-lg">
 	<h2 class="text-xl mb-1">Receive an Invite when we launch</h2>
 
 	<form method="POST">
@@ -35,16 +35,11 @@
 		</div>
 
 		<div>
-			<button class="bg-green-800 text-white hover:bg-green-950 px-4 py-1 rounded">Signup</button>
+			<button class="bg-violet-800 text-white hover:bg-violet-950 px-4 py-1 rounded">Signup</button>
 		</div>
 	</form>
 
 	{#if $message}
 		<div class="bg-white mt-2 p-2 rounded {$page.status === 200 ? 'text-green-800': 'text-red-800'}">{$message}</div>
 	{/if}
-</div>
-
-
-<div>
-	<a href="https://github.com/wiemann/svelte-launchpad" class="underline">SvelteKit Launchpad Template</a>
 </div>
